@@ -7,8 +7,18 @@
     <title>Fund Me App</title>
   </head>
   <body>
-    <script src="./index.js" type="module"></script>
+    <!-- <script src="./index.js" type="module"></script> -->
+    <script type="module">
+      src = "./index.js"
+      import { ethers } from "https://cdn.ethers.io/lib/ethers-5.2.esm.min.js"
+      // Your code here...
+    </script>
     <button id="connectButton">Connect to MM</button>
+    <button id="balanceButton">getBalance</button>
+    <button id="withdrawButton">Withdraw</button>
+
+    <label for="ethAmount">ETH Amount</label>
+    <input id="ethAmount" placeholder="0.1" />
     <button id="fundButton">Fund</button>
   </body>
 </html>
